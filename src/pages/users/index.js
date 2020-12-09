@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import api from '../../servers/api'
 import './style.css';
+import {Link} from "react-router-dom";
 export default function User(){
 
   const [users, setUsers] = useState([]);
@@ -16,7 +17,7 @@ export default function User(){
         <div id = "user-container">
 
           <h1> Lista de usuários </h1>
-
+          <Link className = "button" id = "create-link" to = {"/create"} type = "button"> Criar </Link>
           <ul id = "user-list">
             {users.map(user => (
               <li key = {user.id}>

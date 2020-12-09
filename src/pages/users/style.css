@@ -40,6 +40,7 @@
     width: 80px;
     border-radius: 5px;
     border: 2px solid #da552f;
+    text-decoration: none;
     background: none;
     margin-top: 10px;
     color: #da552f;
@@ -62,5 +63,12 @@
     justify-content: space-between;
     margin-bottom: 20px;
     padding: 10px;
+
+}
+
+#create-link{
+
+    margin: 50px;
+
 
 }
